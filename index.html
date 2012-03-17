@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Impress.js demo</title>
+
+	<meta name="description" content="A little demo of impress.js" />
+	<meta name="author" content="Yassal Sundman" />
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+
+	<div class="fallback-message">
+		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+		<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+	<div id="author">
+		<p>Yassal Sundman</p>
+	</div>
+
+
+	<div id="impress">
+		<div id="title-slide" class="step slide" data-y="100" data-x="100"
+		data-z="-100" data-rotate-x="-45">
+		<h1>DEMO</h1>
+		<h2>impress.js</h2>
+	</div>
+
+	<div class="step" data-x="0" data-y="0">
+		<p class="title">Easy</p>
+		<p class="content">Create the markup</p>
+	</div>
+
+	<div class="step" data-x="200" data-y="0"  data-rotate="90">
+		<p class="title">Fun</p>
+		<p class="content">Add some css</p>
+	</div>
+
+
+	<div class="step" data-x="200" data-y="200">
+		<p class="title">Different</p>
+		<p class="content">Not boring</p>
+	</div>
+
+	<div class="step" data-x="0" data-y="200" data-rotate="-90">
+		<p class="title">Try it out!</p>
+		<p class="content"></p>
+	</div>
+
+	<div id="overview" class="step" data-x="100" data-y="100"
+		data-z="-350">
+	</div>
+
+</div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>impress();</script>
+</body>
+</html>
+
